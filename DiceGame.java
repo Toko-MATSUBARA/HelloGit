@@ -7,6 +7,12 @@ class DiceGame{
 
     public static void main(String args[]){
 
+	System.out.println("What is your name?");
+	Scanner scan = new Scanner(System.in);
+
+	String str = scan.next();
+
+	System.out.println("Hello," + str + "!");
 	
 	System.out.println("Rolling dice...");
 
@@ -21,6 +27,9 @@ class DiceGame{
 	int sum = num + ber;
 
 	System.out.println("Total value: " + sum);
+
+	if(sum > 7) System.out.println("You won!");
+	else System.out.println("You lost.");
 
 
     }
